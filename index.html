@@ -52,6 +52,196 @@
 
         .footer-area p{color:#FFFFFF;}
         .key-feature-contant{padding-top: 5rem;}
+        
+        .wrap-bg-head-cover{width: 110%}
+
+        .title-head-slide{
+            font-size: 0.65rem;
+            line-height: 1.2;
+        }
+
+        .rw-wrap-text-title{
+            position: absolute;
+            display: block;
+            top: 65px;
+            left: 0px;
+            width:100%;
+        }
+
+        .text-head-slide{
+            font-size: 10px;
+            color: #FFFFFF;
+            line-height: 1;
+            font-weight: 400;
+        }
+
+        .rw-wrap-box-img-right{
+            position: absolute;
+            display: block;
+            bottom: 16px;
+            right: 0px;
+            width: 40%;
+        }
+
+        .rw-wrap-img-right{
+            width:105%;
+        }
+
+        .rw-wrap-box-btn{
+            position: absolute;display: block;
+            bottom: 44px;
+            left: 0px;
+            text-align: center;
+            width:100%;            
+        }
+
+        .rw-wrap-box-btn img{
+            width:100px
+        }
+
+        .btn-cover-head{
+            display: block;            
+            font-size: 10px;
+            color: #fff;
+            border: 1px solid;
+            padding: 6px 8px !important;
+            border-radius: 16px;
+            z-index: 15;
+            line-height: 0.6;
+            font-weight: 100;
+        }
+
+        .wrap-box-bottom-btn{
+            display: none;
+            justify-content: space-around;
+            padding: 0px 15px 15px 15px;
+        }
+
+        .ry-wrap-box-bottom-btn{
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .ry-wrap-box-btn-app-download{
+            width: 54%;
+            display: flex;
+            justify-content: flex-end;
+            padding-left: 2px;
+            margin-top:5px;
+        }
+
+        .btn-app-download{
+            width:26%;
+        }
+
+        @media (min-width: 410px) { 
+
+            .ry-wrap-box-btn-app-download{
+                justify-content: flex-start;
+                margin-top:10px;
+            }
+
+            .title-head-slide{
+                font-size: 0.75rem;
+            }
+            .text-head-slide{
+                line-height: 1.2;
+            }
+        } 
+
+        @media (min-width: 576px) { 
+
+            .wrap-bg-head-cover{width: 100%}
+            .rw-wrap-img-right{width:100%}
+
+            .title-head-slide{
+                font-size:1.5rem;
+                line-height: 1.2;
+            }
+
+            .text-head-slide{
+                line-height: 1.4;
+                font-size: 0.75rem;
+            }
+
+        }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) { 
+
+            .rw-wrap-text-title{top: 78px;}
+            .title-head-slide{
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            .text-head-slide{
+                font-size: 1rem;
+            }
+
+            .btn-cover-head {
+                display: block;
+                font-size: 14px;
+                color: #fff;
+                border: 1px solid;
+                padding: 8px 12px !important;
+                border-radius: 16px;
+                z-index: 15;
+                line-height: 1;
+                font-weight: 400; 
+            }
+            .ry-wrap-box-bottom-btn{
+                margin-top: 15px;
+            }
+            .btn-app-download {
+                margin-top: 15px;
+            }
+         }
+
+        /*  Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {  
+            
+            .rw-wrap-text-title{
+                top:87px
+            }
+
+            .title-head-slide{
+                font-size: 2.5rem;
+            }
+
+            .ry-wrap-box-bottom-btn{
+                margin-top: 25px;
+            }
+            .btn-app-download {
+                margin-top: 15px;
+            }
+
+        }
+
+        /* X-Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) { 
+
+            .rw-wrap-text-title{
+                top:100px
+            }
+
+            .title-head-slide{
+                font-size: 2.5rem;
+                line-height: 1.4;
+            }
+
+            .text-head-slide{
+                line-height: 1.4;
+                font-size: 1.5rem;
+            }
+
+            
+         }
+
+        /* XX-Large devices (larger desktops, 1400px and up) */
+        @media (min-width: 1400px) { 
+
+         }
+
     </style>
 
 </head>
@@ -101,7 +291,7 @@
     <!-- ##### Header Area End ##### -->
     
     <!-- ##### Welcome Area Start ##### -->
-    <section class="welcome_area clearfix dzsparallaxer auto-init none fullwidth" data-options='{direction: "normal"}' id="home" style="background-color: #FFFFFF;">
+    <section class="welcome_area clearfix dzsparallaxer auto-init none fullwidth" data-options='{direction: "normal"}' id="home" style="background-color: #FFFFFF;display: none;">
         <div class="divimage dzsparallaxer--target" style="width: 101%; height: 130%; background-image: url('public/images/cover_head.png')"></div>
 
         <!-- Hero Content -->
@@ -135,7 +325,65 @@
         </div>
     </section>
     <!-- ##### Welcome Area End ##### -->
-   
+
+    <section class="clearfix" id="head_home" style="margin-bottom: 2rem;">    
+        <div style="position: relative;overflow: hidden;">
+            <div class="wrap-bg-head-cover">
+                <img src="public/images/cover_head.png" class="img-responsive center-block" />
+            </div>
+            <div class="rw-wrap-text-title">
+                <div class="container">
+                    <h1 class="title-head-slide">
+                        The first Decentralize <br/> Blockchain-based restaurant<br/> Review Platform with NFT
+                    </h1>
+                    <div style="width: 60%;overflow-wrap: break-word;">
+                        <div class="text-head-slide">
+                            ryoii is the world's first Blockchain-based restaurant review Platform
+                            that offers token rewards to users for high quality
+                            restaurant review embedded with NFTs features
+                        </div>
+                    </div>
+
+                    <div class="ry-wrap-box-bottom-btn">
+                        <a href="#" class="btn-cover-head mr-3" style="background-color: #ffb506;border-color: #ffb506;">
+                            GET STARTED
+                        </a>
+                        <a href="#" class="btn-cover-head"> 
+                            GET WHITE PAPER
+                        </a>
+                    </div>
+
+                    <div class="ry-wrap-box-btn-app-download">
+                        <a href="#" class="mr-3 btn-app-download">
+                            <img src="public/images/btn_app_store.png" />
+                        </a>
+                        <a href="#" class="btn-app-download"> 
+                           <img src="public/images/btn_google_play.png" />
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="rw-wrap-box-img-right">
+                <div class="rw-wrap-img-right">
+                    <img src="public/images/mobile_header.png" class="img-responsive" />
+                </div>
+            </div>
+            <div style="position: absolute;left: 0;bottom: 14px;">
+                <img src="public/images/cover_head_bottom.png" class="img-responsive" />
+            </div>
+        </div>         
+        <div class="wrap-box-bottom-btn"">
+            <a href="#" class="mr-3" style="text-align: center;">
+                <img src="public/images/btn_get_started.png" style="width:89%;" />
+            </a>
+            <a href="#" style="text-align: center;"> 
+                <img src="public/images/btn_get_started.png" style="width:89%;" />
+            </a>
+        </div>   
+
+    </section>
+
     <div class="clearfix"></div>
 
 	<!-- ##### Welcome Start ##### -->
@@ -184,7 +432,7 @@
 	            </div>
 	            <div class="col-12">                       
                     <div style="padding:30px 0;overflow:hidden">
-                        <div class="container text-center">
+                        <div class="row text-center">
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <img src="public/images/token_food.png" alt="">
                                 <h4 class="m-0">Food</h4>
@@ -222,7 +470,7 @@
 	<!-- ##### Token Utilites End ##### -->
 
     <!-- ##### Progress Start ##### -->
-    <section class="section-padding-100" style="background: url('public/images/bg_progress.png');padding-bottom:420px;">
+    <section class="section-padding-100" style="background: url('public/images/bg_progress.png');padding-bottom:420px;background-repeat: no-repeat;background-size: cover;">
         <div class="container">
             <div class="section-heading text-center">
                
@@ -294,7 +542,7 @@
 	</section>
     <!-- ##### Why decntralise End ##### -->
 
-    <section class="section-padding-100" style="background: #edf6fd">
+    <section class="section-padding-100">
         <div class="container">
             <div class="section-heading text-center">
                
@@ -561,56 +809,6 @@
         </div>
     </section>
     <!-- ##### Our roadmap Area End ##### -->
-
-    <!-- ##### FAQ & Timeline Area Start ##### -->
-    <div class="faq-timeline-area section-padding-100">
-        <div class="container">
-        	<div class="section-heading text-center">
-	            <!-- Dream Dots -->
-	            <div class="justify-content-center">
-	                <img src="img/svg/section-icon-5.svg" alt="">
-	            </div>
-	            <h2>Pre-Sale Frequently Questions</h2>
-	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
-	        </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 col-md-12">
-                    
-
-                    <div class="dream-faq-area">
-                        <dl style="margin-bottom:0">
-                            <!-- Single FAQ Area -->
-                            <dt>What are the objectives of this token?</dt>
-                            <dd>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis quaerat nostrum, pariatur ipsam sunt accusamus enim necessitatibus est fugiat, assumenda dolorem, deleniti corrupti cupiditate ipsum, dolorum voluptatum esse error?</p>
-                            </dd>
-                            <!-- Single FAQ Area -->
-                            <dt class="wave">What is Token Sale and pre-sale?</dt>
-                            <dd>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis quaerat nostrum, pariatur ipsam sunt accusamus enim necessitatibus est fugiat, assumenda dolorem, deleniti corrupti cupiditate ipsum, dolorum voluptatum esse error?</p>
-                            </dd>
-                            <!-- Single FAQ Area -->
-                            <dt class="wave">What is the pre-sale start date?</dt>
-                            <dd>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis quaerat nostrum, pariatur ipsam sunt accusamus enim necessitatibus est fugiat, assumenda dolorem, deleniti corrupti cupiditate ipsum, dolorum voluptatum esse error?</p>
-                            </dd>
-                            <!-- Single FAQ Area -->
-                            <dt class="wave">how may I take part in pre-sale?</dt>
-                            <dd>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis quaerat nostrum, pariatur ipsam sunt accusamus enim necessitatibus est fugiat, assumenda dolorem, deleniti corrupti cupiditate ipsum, dolorum voluptatum esse error?</p>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-                    <img src="img/core-img/faq.png" alt="" class="center-block img-responsive">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### FAQ & Timeline Area End ##### -->
-
 
     <!-- ##### token-distribution Area start ##### -->
     <section class="token-distribution section-padding-100">

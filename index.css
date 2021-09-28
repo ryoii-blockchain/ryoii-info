@@ -1,0 +1,44 @@
+
+.div-wrap-img{
+    position: absolute;
+    display: block;
+    pointer-events: auto;
+    left: 248px;
+    top: 31px;
+    z-index: 6;
+    visibility: visible;
+    perspective: 601px;
+}
+
+.div-loop-wrap{
+    position: absolute;
+    display: block;
+}
+
+
+.div-mask-wrap{
+    position: absolute;
+    display: block;
+    overflow: visible;
+}
+
+.div-layer{
+    z-index: 6;
+    color: rgb(255, 255, 255);
+    width: 197px;
+    height: 241px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    transform-origin: 50% 50%;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+}
+
+.div-img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
