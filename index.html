@@ -134,6 +134,19 @@
             width:26%;
         }
 
+        .timeline-split .timeline .block{
+            background-color: #f7f7f7;
+            border-color: #ccc;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .light-version h3{
+            color:#232424 !important;
+        }
+
+        .welcome_area.none {
+            height: 135vh !important;
+        }
+
         @media (min-width: 410px) { 
 
             .ry-wrap-box-btn-app-download{
@@ -260,6 +273,11 @@
 
          }
 
+         .hero-content.pizza {
+            background: url(public/images/cover_head.png) no-repeat right top;
+        }
+
+        .main-ilustration-10{background-image: none;}
     </style>
 
 </head>
@@ -307,44 +325,9 @@
             </div>
     </header>
     <!-- ##### Header Area End ##### -->
-    
-    <!-- ##### Welcome Area Start ##### -->
-    <section class="welcome_area clearfix dzsparallaxer auto-init none fullwidth" data-options='{direction: "normal"}' id="home" style="background-color: #FFFFFF;display: none;">
-        <div class="divimage dzsparallaxer--target" style="width: 101%; height: 130%; background-image: url('public/images/cover_head.png')"></div>
 
-        <!-- Hero Content -->
-        <div class="hero-content transparent">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <!-- Welcome Content -->
-                    <div class="col-12 col-lg-7 col-md-12">
-                        <div class="welcome-content" style="margin-top:0px;">
-                            <h1>
-                                The first Decentralize Blockchain-based restaurant Review Platform with NFT
-                            </h1>
-                            <p>
-                                ryoii is the world's first Blockchain-based restaurant review Platform
-                                that offers token rewards to users for high quality
-                                restaurant review embedded with NFTs features
-                            </p>
-                            <div>
-                                <a href="#" class="btn dream-btn mr-3">GET STARTED</a>
-                                <a href="#" class="btn dream-btn"> GET WHITE PAPER</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-lg-5 col-md-12 d-flex align-items-end">
-                        <img src="public/images/mobile_header.png">
-                    </div>
-                   
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Welcome Area End ##### -->
-
-    <section class="clearfix" id="head_home" style="margin-bottom: 2rem;">    
+    <section class="clearfix" id="head_home" style="margin-bottom: 2rem;display: none;">    
         <div style="position: relative;overflow: hidden;">
             <div class="wrap-bg-head-cover">
                 <img src="public/images/cover_head.png" class="img-responsive center-block" />
@@ -401,6 +384,52 @@
         </div>   
 
     </section>
+
+    <!-- ##### Welcome Area Start ##### -->
+    <section class="welcome_area clearfix dzsparallaxer auto-init none fullwidth" data-options='{direction: "normal"}' id="home">
+        <div class="divimage dzsparallaxer--target" style="width: 100%; height: 100%; background-image: url(public/images/cover_head.png);background-color: #FFFFFF;"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content transparent">
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Welcome Content -->
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                        <div class="welcome-content" style="margin-top: 0px;">
+                            
+                            <h1 class="fadeInUp" data-wow-delay="0.2s">The first Decentralize Blockchain-based restaurant Review Platform with NFT</h1>
+                            <p class="w-text fadeInUp" data-wow-delay="0.3s">
+                                ryoii is the world's first Blockchain-based restaurant review Platform
+                                that offers token rewards to users for high quality
+                                restaurant review embedded with NFTs features
+                            </p>
+                            <div class="dream-btn-group">
+                                <a href="#" class="btn dream-btn mr-3">GET STARTED</a>
+                                <a href="#" class="btn dream-btn"> GET WHITE PAPER</a>
+                            </div>
+                            <div class="mt-5 d-flex">
+                                <a href="#" class="mr-2">
+                                    <img src="public/images/btn_app_store.png" style="width:150px" />
+                                </a>
+                                <a href="#" >
+                                    <img src="public/images/btn_google_play.png" style="width:150px" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 d-none d-md-block">
+                        <div class="rw-wrap-img-right">
+                            <img src="public/images/mobile_header.png" class="img-responsive" />
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Welcome Area End ##### -->
 
     <div class="clearfix"></div>
 
@@ -488,7 +517,7 @@
 	<!-- ##### Token Utilites End ##### -->
 
     <!-- ##### Progress Start ##### -->
-    <section class="section-padding-100" style="background: url('public/images/bg_progress.png');padding-bottom:420px;background-repeat: no-repeat;background-size: cover;">
+    <section class="section-padding-100" style="background: url('public/images/bg_progress.png');background-repeat: no-repeat;background-size: cover;">
         <div class="container">
             <div class="section-heading text-center">
                
@@ -498,38 +527,20 @@
                 <h4 style="font-size: 30px;color:#FFFFFF;">Our Progress so far?</h4>
                 <p>I am text block. Click edit button to change this text.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
             </div>
- 
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <img src="public/images/graph1.png" alt="" class="img-responsive center-block" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+
+                </div>
+                
+            </div>
         </div>
     </section>
     <!-- ##### Progress End ##### -->
 
     <div class="clearfix"></div>
-
-    <!-- ##### Our Challenge Start ##### -->
-    <section class="about-us-area section-padding-100-0 clearfix" id="about">
-	    <div class="container">
-	        <div class="row align-items-center">	                
-	            <div class="col-12 col-lg-6">
-                    <div class="welcome-meter">
-                        <img src="public/images/challeng.png" class="img-responsive center-block" alt="">
-                    </div>
-                </div>
-	            <div class="col-12 col-lg-6">
-	                <div class="who-we-contant">
-	                    <div class="text-left">
-	                        <h6 class="sc_item_subtitle"><b>04.</b> RYOII TOKEN</h6>
-	                    </div>
-	                    <h4>Our Challenge</h4>
-	                    <p>
-                            Ryoii aim to support communities by returning its value
-                            to those ho provide contributions by rewarding them
-                            with ours tokens (Ryoiicoin)</p>
-	                </div>
-	            </div>
-	            </div>
-	        </div>
-	</section>
-    <!-- ##### Our Challenge End ##### -->
 
     <!-- ##### Why decntralise Start ##### -->
     <section class="about-us-area section-padding-100 clearfix" id="about">
@@ -719,67 +730,6 @@
         </div>
     </section>
 
-     <!-- ##### Our features Area start ##### -->
-     <section class="features section-padding-100">
-        <div class="container">
-            <div class="section-heading text-center">
-                <!-- Dream Dots -->
-                <div class="justify-content-center fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                     <img src="img/svg/section-icon-4.svg" alt="">
-                </div>
-                <h2 class="fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Our Delivery Application</h2>
-                <p class="fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="services-column col-lg-5 col-lg-offset-1 col-md-10 offset-md-1 col-xs-10 offset-xs-1">
-
-                    <!--Services Block Four-->
-                    <div class="services-block-four">
-                        <div class="inner-box">
-                            <div class="icon-img-box">
-                                <img src="img/svg/feature1.svg" alt="">
-                            </div>
-                            <h3><a href="#">Measure the customer experience</a></h3>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda beatae provident non ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                            
-                        </div>
-                    </div>
-
-                    <!--Services Block Four-->
-                    <div class="services-block-four">
-                        <div class="inner-box">
-                            <div class="icon-img-box">
-                                <img src="img/svg/feature2.svg" alt="">
-                            </div>
-                            <h3><a href="#">Multi-device testing made simple</a></h3>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aut repudiandae harum, fugit.</div>
-                        </div>
-                    </div>
-                    
-                    <!--Services Block Four-->
-                    <div class="services-block-four" style="margin-bottom:0">
-                        <div class="inner-box">
-                            <div class="icon-img-box">
-                                <img src="img/svg/feature3.svg" alt="">
-                            </div>
-                            <h3><a href="#">Launch quickly with reusable templates</a></h3>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia maiores, ducimus animi a..</div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="service-img-wrapper col-lg-6 col-md-12 col-sm-12">
-                    <div class="image-box">
-                        <img src="img/phone3.png" class="center-block img-responsive phone-img" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Our features Area End ##### -->
-
     <!-- ##### Our roadmap Area start ##### -->
     <section class="roadmap section-padding-100" style="background:#f8fbfe" id="roadmap">
         
@@ -798,25 +748,25 @@
                     <div class="timeline section-box-margin">
                         <div class="block block-left">
                            <h3>Platform Development Starts</h3>
-                           <span class="date">May 12, 2018</span> <span class="between">to</span> <span class="date">Jun 19, 2018</span>
+                           <span class="date">May 12, 2021</span> 
                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto adipisci provident officia animi.</p>
                         </div>
 
                         <div class="block block-right mt-30">
                            <h3>Groundwork Preparation for ICO</h3>
-                           <span class="date">Aug 18, 2018</span> <span class="between">to</span> <span class="date">Sep 23, 2018</span>
+                           <span class="date">Aug 18, 2021</span> 
                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto adipisci provident officia animi.</p>
                         </div>
 
                         <div class="block block-left mt-30">
                            <h3>Crypto Blockchain Release</h3>
-                           <span class="date">Oct 08, 2018</span> <span class="between">to</span> <span class="date">Nov 16, 2018</span>
+                           <span class="date">Oct 08, 2021</span> 
                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto adipisci provident officia animi.</p>
                         </div>
 
                         <div class="block block-right mt-30">
                            <h3>Release Bank &amp; Cards Phase</h3>
-                           <span class="date">Dec 28, 2018</span> <span class="between">to</span> <span class="date">Jan 29, 2019</span>
+                           <span class="date">Oct 28, 2021</span> 
                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto adipisci provident officia animi.</p>
                         </div>
                         <div class="circle"></div>
@@ -959,8 +909,8 @@
                         <div class="footer-copywrite-info">
                             <!-- Copywrite -->
                             <div class="copywrite_text">
-                                <div class="footer-logo">
-                                    <a href="#"><img src="img/core-img/logo.png" alt="logo"> Forponia.</a>
+                                <div class="mb-1">
+                                    <a href="#"><img src="public/images/logo.png" alt="logo"></a>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad, a eaque officiis eligendi blanditiis odio necessitatibus.</p>
                             </div>
@@ -977,14 +927,6 @@
                     <div class="col-12 col-md-7">
                         <!-- Content Info -->
                         <div class="contact_info_area d-sm-flex justify-content-between">
-                            <div class="contact_info text-center">
-                                <h5>NAVIGATE</h5>
-                                <a href=""><p>Advertisers</p></a>
-                                <a href=""><p>Developers</p></a>
-                                <a href=""><p>Resources</p></a>
-                                <a href=""><p>Company</p></a>
-                                <a href=""><p>Connect</p></a>
-                            </div>
                             <!-- Content Info -->
                             <div class="contact_info text-center">
                                 <h5>PRIVACY & TOS</h5>
