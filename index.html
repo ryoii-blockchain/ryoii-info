@@ -51,7 +51,7 @@
         }
 
         .footer-area p{color:#FFFFFF;}
-        .key-feature-contant{padding-top: 5rem;}
+        .key-feature-contant{padding-top: 2rem;}
         
         .wrap-bg-head-cover{width: 110%}
 
@@ -122,16 +122,13 @@
             margin-top: 10px;
         }
 
-        .ry-wrap-box-btn-app-download{
-            width: 54%;
-            display: flex;
-            justify-content: flex-end;
+        .ry-wrap-box-download{
             padding-left: 2px;
             margin-top:5px;
         }
-
-        .btn-app-download{
-            width:26%;
+        .ry-wrap-box-btn-app-download{            
+            display: flex;
+            justify-content: flex-end;           
         }
 
         .timeline-split .timeline .block{
@@ -147,10 +144,15 @@
             height: 135vh !important;
         }
 
+        .feature-review-contract{margin-bottom: 3rem;}
+
         @media (min-width: 410px) { 
 
             .ry-wrap-box-btn-app-download{
                 justify-content: flex-start;
+                
+            }
+            .ry-wrap-box-download{
                 margin-top:10px;
             }
 
@@ -205,9 +207,6 @@
             .ry-wrap-box-bottom-btn{
                 margin-top: 15px;
             }
-            .btn-app-download {
-                margin-top: 15px;
-            }
          }
 
         /*  Large devices (desktops, 992px and up) */
@@ -224,9 +223,7 @@
             .ry-wrap-box-bottom-btn{
                 margin-top: 25px;
             }
-            .btn-app-download {
-                margin-top: 15px;
-            }
+            
 
             .btn-cover-head {               
                 font-size: 16px;
@@ -234,17 +231,16 @@
                 border-radius: 24px;
             }
 
-            .btn-app-download{
-                width:28%;
-            }
-
             .ry-wrap-box-bottom-btn{
                 margin-top:2rem;
             }
 
-            .ry-wrap-box-btn-app-download{
+            .ry-wrap-box-download{
                 margin-top:2rem;
             }
+
+            .key-feature-contant{padding-top: 5rem;}
+            .feature-review-contract{margin-bottom: 0px;}
 
         }
 
@@ -327,15 +323,15 @@
     <!-- ##### Header Area End ##### -->
 
 
-    <section class="clearfix" id="head_home" style="margin-bottom: 2rem;display: none;">    
+    <section class="clearfix" id="home" style="margin-bottom: 2rem;">    
         <div style="position: relative;overflow: hidden;">
             <div class="wrap-bg-head-cover">
                 <img src="public/images/cover_head.png" class="img-responsive center-block" />
             </div>
             <div class="rw-wrap-text-title">
                 <div class="container">
-                    <h1 class="title-head-slide">
-                        The first Decentralize <br/> Blockchain-based restaurant<br/> Review Platform with NFT
+                    <h1 class="title-head-slide">                        
+                        Decentralized blockchain-based <br>food review platform with NFT
                     </h1>
                     <div style="width: 60%;overflow-wrap: break-word;">
                         <div class="text-head-slide">
@@ -354,14 +350,18 @@
                         </a>
                     </div>
 
-                    <div class="ry-wrap-box-btn-app-download">
-                        <a href="#" class="mr-3 btn-app-download">
-                            <img src="public/images/btn_app_store.png" />
-                        </a>
-                        <a href="#" class="btn-app-download"> 
-                           <img src="public/images/btn_google_play.png" />
-                        </a>
+                    <div class="ry-wrap-box-download">
+                        <p style="color: #FFFFFF;font-size: 14px;margin-bottom: 8px;">Available for download</p>
+                        <div class="ry-wrap-box-btn-app-download">                        
+                            <a href="#">
+                                <img src="public/images/btn_app_store.png" style="width: 135px;margin-right: 8px; />
+                            </a>
+                            <a href="#"> 
+                               <img src="public/images/btn_google_play.png" style="width: 135px;" />
+                            </a>
+                        </div>
                     </div>
+                    
                 </div>
                 
             </div>
@@ -370,8 +370,8 @@
                     <img src="public/images/mobile_header.png" class="img-responsive" />
                 </div>
             </div>
-            <div style="position: absolute;left: 0;bottom: 14px;">
-                <img src="public/images/cover_head_bottom.png" class="img-responsive" />
+            <div style="position: absolute;left: 0;bottom:-135px;">
+                <img src="public/images/bg_bottom_cover_head1.png" class="img-responsive" />
             </div>
         </div>         
         <div class="wrap-box-bottom-btn"">
@@ -385,52 +385,6 @@
 
     </section>
 
-    <!-- ##### Welcome Area Start ##### -->
-    <section class="welcome_area clearfix dzsparallaxer auto-init none fullwidth" data-options='{direction: "normal"}' id="home">
-        <div class="divimage dzsparallaxer--target" style="width: 100%; height: 100%; background-image: url(public/images/cover_head.png);background-color: #FFFFFF;"></div>
-
-        <!-- Hero Content -->
-        <div class="hero-content transparent">
-
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Welcome Content -->
-                    <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                        <div class="welcome-content" style="margin-top: 0px;">
-                            
-                            <h1 class="fadeInUp" data-wow-delay="0.2s">The first Decentralize Blockchain-based restaurant Review Platform with NFT</h1>
-                            <p class="w-text fadeInUp" data-wow-delay="0.3s">
-                                ryoii is the world's first Blockchain-based restaurant review Platform
-                                that offers token rewards to users for high quality
-                                restaurant review embedded with NFTs features
-                            </p>
-                            <div class="dream-btn-group">
-                                <a href="#" class="btn dream-btn mr-3">GET STARTED</a>
-                                <a href="#" class="btn dream-btn"> GET WHITE PAPER</a>
-                            </div>
-                            <div class="mt-5 d-flex">
-                                <a href="#" class="mr-2">
-                                    <img src="public/images/btn_app_store.png" style="width:150px" />
-                                </a>
-                                <a href="#" >
-                                    <img src="public/images/btn_google_play.png" style="width:150px" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 d-none d-md-block">
-                        <div class="rw-wrap-img-right">
-                            <img src="public/images/mobile_header.png" class="img-responsive" />
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Welcome Area End ##### -->
-
     <div class="clearfix"></div>
 
 	<!-- ##### Welcome Start ##### -->
@@ -439,7 +393,7 @@
 	        <div class="row align-items-center">	                
 	            <div class="col-12 col-lg-6">
                     <div class="welcome-meter">
-                        <img src="public/images/ryoii_community.png" class="img-responsive center-block" alt="">
+                        <img src="public/images/ryoii_community1.png" class="img-responsive center-block" alt="">
                     </div>
                 </div>
 	            <div class="col-12 col-lg-6">
@@ -447,11 +401,19 @@
 	                    <div class="text-left">
 	                        <h6 class="sc_item_subtitle"><b>01.</b> welcome</h6>
 	                    </div>
-	                    <h4 >What is Decentralise Review Platform ?</h4>
+	                    <h4 >What is Ryoii Decentralized Review Platform ?</h4>
+                       
 	                    <p>
-                            Ryoii aim to support communities by returning its value
-                            to those ho provide contributions by rewarding them
-                            with ours tokens (Ryoiicoin)</p>
+                            Ryoii wants to create a decentralized review platform that uses advantages of token incentives and distributed ledgers to create immutable records and create filtered information layers to  filter out false and fake reviews
+                        </p>
+                        <p>
+                            <p>
+                                Ryoii wants to create a decentralized review platform that uses advantages of token incentives and distributed ledgers to create immutable records and create filtered information layers to  filter out false and fake reviews
+                            </p>
+                        </p>
+                        <p>
+                            So, we want to create a new layer working as a trust information layer in our system to help us build strong community with strong incentives which  share the same goals and values to redefine new standards of a review platform business and drive the economic growth of the restaurant industry of the world 
+                        </p>
 	                </div>
 	            </div>
 	        </div>
@@ -478,7 +440,7 @@
 	                </div>
 	            </div>
 	            <div class="col-12">                       
-                    <div style="padding:30px 0;overflow:hidden">
+                    <div style="padding:30px 0px 0px 0px;overflow:hidden">
                         <div class="row text-center">
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <img src="public/images/token_food.png" alt="">
@@ -522,7 +484,7 @@
             <div class="section-heading text-center">
                
                 <div class="justify-content-center">
-                    <h6 class="sc_item_subtitle" style="color:#FFFFFF;"><b>03.</b> RYOII TOKEN</h6>
+                    <h6 class="sc_item_subtitle" style="color:#FFFFFF;"><b>03.</b> Ryoii Progress</h6>
                 </div>
                 <h4 style="font-size: 30px;color:#FFFFFF;">Our Progress so far?</h4>
                 <p>I am text block. Click edit button to change this text.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
@@ -543,21 +505,27 @@
     <div class="clearfix"></div>
 
     <!-- ##### Why decntralise Start ##### -->
-    <section class="about-us-area section-padding-100 clearfix" id="about">
+    <section class="about-us-area section-padding-100-0 clearfix" id="about">
 	    <div class="container">
 	        <div class="row align-items-center">	                
 	            
 	            <div class="col-12 col-lg-6">
 	                <div class="who-we-contant">
 	                    <div class="text-left">
-	                        <h6 class="sc_item_subtitle"><b>05.</b> RYOII TOKEN</h6>
+	                        <h6 class="sc_item_subtitle"><b>04.</b> Ryoii Decentralize System</h6>
 	                    </div>
-	                    <h4>Why decntralise ?</h4>
+	                    <h4>Why do we go from centralized to decentralized ?</h4>
 	                    <p>
-                            I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                            For 6 years in the industry, we can see that the problem is caused by the centralized review platform which is the big part for consumers’ decision to choose which restaurants to visit. According to bright local research, 82% of consumers have read fake reviews in the last year. This raises concerns about growing of fake and false reviews in the industry
                         </p>
                         <p>
-                            I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                            Faking reviews is a big problem because it manipulates economic incentives that should drive the restaurant industry forward. Combined with the fast pace of information; faking reviews has now become a business itself. It is used as a tool to manipulate reputations which hurts the restaurant industry as a whole
+                        </p>
+                        <p>
+                            We have seen  a lot of restaurants get one star just because their competitors want to destroy their reputations and some not-so-good restaurants get 5 stars because they generate fake reviews for themselves. This misconduct will eventually cause downturns for the restaurant industry in the future
+                        </p>
+                        <p>
+                            So, we have researched and decided to step in to create a decentralized blockchain based review platform that uses advantages of token incentives and distributed ledgers to create immutable records and a new kind of community that can get incentives from curating and maintaining trustworthiness of the platform that will eventually belong to them 
                         </p>
 	                </div>
 	            </div>
@@ -571,12 +539,13 @@
 	</section>
     <!-- ##### Why decntralise End ##### -->
 
-    <section class="section-padding-100">
+    <!-- ##### Our Solutions Start ##### -->
+    <section class="section-padding-100-0">
         <div class="container">
             <div class="section-heading text-center">
                
                 <div class="justify-content-center">
-                    <h6 class="sc_item_subtitle"><b>02.</b> RYOII TOKEN</h6>
+                    <h6 class="sc_item_subtitle"><b>05.</b> Ryoii Solutions</h6>
                 </div>
                 <h4 style="font-size: 30px;">Our Solutions</h4>
                 <p style="max-width: 100%;text-align: left;">
@@ -592,6 +561,7 @@
  
         </div>
     </section>
+    <!-- ##### Our Solutions End ##### -->
 
 	<!-- ##### KeyFeature Start ##### -->
 	<section class="section-padding-100 clearfix" id="key_feature">
@@ -600,31 +570,38 @@
 	            <div class="col-12">
 	                <div class="who-we-contant">
 	                    <div class="text-left">
-	                        <h6 class="sc_item_subtitle"><b>01.</b> Key feature</h6>
+	                        <h6 class="sc_item_subtitle"><b>06.</b> Key feature</h6>
 	                    </div>
 	                    <h4 > Key feature</h4>	                    
 	                </div>
 	            </div>
 	        </div>
             <div class="row">	                
-	            <div class="col-12 col-lg-6">
+	            <div class="col-12 col-lg-6 d-lg-block d-none">
                     <div class="welcome-meter">
                         <img src="public/images/payment_comfirmation.png" class="img-responsive center-block" alt="">
                     </div>
                 </div>
 	            <div class="col-12 col-lg-6">
 	                <div class="key-feature-contant">
-	                    <h6>What is Decentralise Review Platform ?</h6>
+	                    <h5>What is Decentralise Review Platform ?</h5>
 	                    <p>
                             Ryoii aim to support communities by returning its value
                             to those ho provide contributions by rewarding them
-                            with ours tokens (Ryoiicoin)</p>
+                            with ours tokens (Ryoiicoin)
+                        </p>    
+                        <div class="welcome-meter d-lg-none d-block mb-5" style="margin-top:-65px;">
+                            <img src="public/images/payment_comfirmation.png"  class="img-responsive center-block" alt="">
+                        </div>                
 	                </div>
 	            </div>
+            </div>
 
+            <div class="row">	    
+               
                 <div class="col-12 col-lg-6">
 	                <div class="key-feature-contant">
-	                    <h6>What is Decentralise Review Platform ?</h6>
+	                    <h5>What is Decentralise Review Platform ?</h5>
 	                    <p>
                             Ryoii aim to support communities by returning its value
                             to those ho provide contributions by rewarding them
@@ -632,29 +609,37 @@
 	                </div>
 	            </div>
                 <div class="col-12 col-lg-6">
-                    <div class="welcome-meter">
-                        <img src="public/images/sumbit_contract.png" class="img-responsive center-block" alt="">
+                    <div class="feature-review-contract">
+                        <img src="public/images/review_contract.png" class="img-responsive center-block" alt="">
                     </div>
                 </div>
-	            
+            </div>
 
-                <div class="col-12 col-lg-6">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-lg-block d-none">
                     <div class="welcome-meter">
-                        <img src="public/images/oracle.png" class="img-responsive center-block" alt="">
+                        <img src="public/images/oracle1.png" class="img-responsive center-block" alt="">
                     </div>
                 </div>
 	            <div class="col-12 col-lg-6">
 	                <div class="key-feature-contant">
-	                    <h6>What is Decentralise Review Platform ?</h6>
+	                    <h5>What is Decentralise Review Platform ?</h5>
 	                    <p>
                             Ryoii aim to support communities by returning its value
                             to those ho provide contributions by rewarding them
-                            with ours tokens (Ryoiicoin)</p>
+                            with ours tokens (Ryoiicoin)
+                        </p>
+                        <div class="welcome-meter mb-5 d-lg-none d-block">
+                            <img src="public/images/oracle1.png" class="img-responsive center-block" alt="">
+                        </div>
 	                </div>
 	            </div>
+            </div>
+
+            <div class="row">
                 <div class="col-12 col-lg-6">
 	                <div class="key-feature-contant">
-	                    <h6>What is Decentralise Review Platform ?</h6>
+	                    <h5>What is Decentralise Review Platform ?</h5>
 	                    <p>
                             Ryoii aim to support communities by returning its value
                             to those ho provide contributions by rewarding them
@@ -663,17 +648,17 @@
 	            </div>
                 <div class="col-12 col-lg-6">
                     <div class="welcome-meter">
-                        <img src="public/images/digital_coupon.png" class="img-responsive center-block" alt="">
+                        <img src="public/images/digital_coupon1.png" class="img-responsive center-block" alt="">
                     </div>
-                </div>
-	            
+                </div>	            
 	        </div>
+
 	    </div>
 	</section>
 	<!-- ##### KeyFeature End ##### -->
     
-
-    <section class="spread-map" style="background-image: url('img/bg-img/bread-bg.png');">
+    <!-- ##### Got you Wherever you are start ##### -->
+    <section class="spread-map" style="background-image: url('img/bg-img/bread-bg.png');padding-bottom: 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-xs-12">
@@ -729,9 +714,10 @@
             </div>
         </div>
     </section>
+    <!-- ##### Got you Wherever you are End ##### -->
 
     <!-- ##### Our roadmap Area start ##### -->
-    <section class="roadmap section-padding-100" style="background:#f8fbfe" id="roadmap">
+    <section class="roadmap section-padding-100-0" style="background:#f8fbfe" id="roadmap">
         
         <div class="container">
             <div class="section-heading text-center">
@@ -779,7 +765,7 @@
     <!-- ##### Our roadmap Area End ##### -->
 
     <!-- ##### token-distribution Area start ##### -->
-    <section class="token-distribution section-padding-100">
+    <section class="token-distribution section-padding-100-0">
         <div class="container">
             
             <div class="section-heading text-center">
@@ -906,10 +892,10 @@
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-12 col-md-5">
-                        <div class="footer-copywrite-info">
+                        <div class="footer-copywrite-info mb-3">
                             <!-- Copywrite -->
                             <div class="copywrite_text">
-                                <div class="mb-1">
+                                <div class="mb-3">
                                     <a href="#"><img src="public/images/logo.png" alt="logo"></a>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad, a eaque officiis eligendi blanditiis odio necessitatibus.</p>
@@ -928,8 +914,8 @@
                         <!-- Content Info -->
                         <div class="contact_info_area d-sm-flex justify-content-between">
                             <!-- Content Info -->
-                            <div class="contact_info text-center">
-                                <h5>PRIVACY & TOS</h5>
+                            <div class="contact_info text-center mb-3">
+                                <h5 style="font-size: 16px;">PRIVACY & TOS</h5>
                                 <a href=""><p>Advertiser Agreement</p></a>
                                 <a href=""><p>Acceptable Use Policy</p></a>
                                 <a href=""><p>Privacy Policy</p></a>
@@ -937,12 +923,12 @@
                                 <a href=""><p>Developer Agreement</p></a>
                             </div>
                             <!-- Content Info -->
-                            <div class="contact_info text-center">
-                                <h5>CONTACT US</h5>
-                                <p>Mailing Address:xx00 E. Union Ave</p>
-                                <p>Suite 1100. Denver, CO 80237</p>
-                                <p>+999 90932 627</p>
-                                <p>support@yourdomain.com</p>
+                            <div class="contact_info text-center mb-3">
+                                <h5 style="font-size: 16px;">CONTACT US</h5>
+                                <p>AIA Capital Center Building,Room 1506,15th Floor</p>
+                                <p>89 Ratchadapisek road,Din Daeng,Bangkok 10400</p>
+                                <p>02-042-7223-4</p>
+                                <p>info@ryoiireview.com</p>
                             </div>
                         </div>
                     </div>
