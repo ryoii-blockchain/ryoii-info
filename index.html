@@ -53,10 +53,10 @@
         .footer-area p{color:#FFFFFF;}
         .key-feature-contant{padding-top: 2rem;}
         
-        .wrap-bg-head-cover{width: 110%}
+        .wrap-bg-head-cover{width: 100%;max-height: 1250px;background-color: #FFFFFF;}
 
         .title-head-slide{
-            font-size: 0.65rem;
+            font-size: 1rem;
             line-height: 1.2;
         }
 
@@ -69,9 +69,8 @@
         }
 
         .text-head-slide{
-            font-size: 10px;
+            font-size: 0.8rem;
             color: #FFFFFF;
-            line-height: 1;
             font-weight: 400;
         }
 
@@ -146,6 +145,31 @@
 
         .feature-review-contract{margin-bottom: 3rem;}
 
+        .rw-bottom-cover-header{
+            position: absolute;left: 0;bottom:-89px;
+        }
+
+        .section-content{padding-left:15px;padding-right:15px;}        
+
+
+        .timeline-split .timeline::before,.timeline-split .timeline .block::before {
+            background:#dc3545 !important
+        }
+
+        .timeline-split .timeline .block::before {
+            background:#dc3545 !important
+        }
+
+        .timeline-split .timeline::after {
+            background:#dc3545 !important
+        }
+
+        .timeline-split .timeline .block.block-left::after, .timeline-split .timeline .block.block-right::after {
+            background:#dc3545 !important
+        }
+
+        .img-download-app{width:135px;}
+
         @media (min-width: 410px) { 
 
             .ry-wrap-box-btn-app-download{
@@ -155,43 +179,30 @@
             .ry-wrap-box-download{
                 margin-top:10px;
             }
-
-            .title-head-slide{
-                font-size: 0.75rem;
-            }
-            .text-head-slide{
-                line-height: 1.2;
-            }
+                     
         } 
 
         @media (min-width: 576px) { 
-
-            .wrap-bg-head-cover{width: 100%}
+                        
             .rw-wrap-img-right{width:100%}
 
             .title-head-slide{
-                font-size:1.5rem;
+                font-size:1.25rem;
                 line-height: 1.2;
-            }
-
-            .text-head-slide{
-                line-height: 1.4;
-                font-size: 0.75rem;
-            }
+            }            
 
         }
 
         /* Medium devices (tablets, 768px and up) */
         @media (min-width: 768px) { 
 
+            .section-content{padding-left:0px;padding-right:0px;}
+
             .rw-wrap-text-title{top: 78px;}
             .title-head-slide{
-                font-size: 2rem;
-                line-height: 1.2;
-            }
-            .text-head-slide{
-                font-size: 1rem;
-            }
+                font-size: 1.5rem;
+                line-height: 1.4;
+            }            
 
             .btn-cover-head {
                 display: block;
@@ -207,17 +218,21 @@
             .ry-wrap-box-bottom-btn{
                 margin-top: 15px;
             }
+
+            .img-download-app{width:89px;}
          }
 
         /*  Large devices (desktops, 992px and up) */
         @media (min-width: 992px) {  
+
+            .img-download-app{width:135px;}
+
+            .rw-bottom-cover-header{
+                bottom:-135px;
+            }
             
             .rw-wrap-text-title{
                 top:87px
-            }
-
-            .title-head-slide{
-                font-size: 2.5rem;
             }
 
             .ry-wrap-box-bottom-btn{
@@ -257,10 +272,8 @@
             }
 
             .text-head-slide{
-                line-height: 1.4;
                 font-size: 1.5rem;
             }
-
             
          }
 
@@ -269,11 +282,6 @@
 
          }
 
-         .hero-content.pizza {
-            background: url(public/images/cover_head.png) no-repeat right top;
-        }
-
-        .main-ilustration-10{background-image: none;}
     </style>
 
 </head>
@@ -322,11 +330,10 @@
     </header>
     <!-- ##### Header Area End ##### -->
 
-
-    <section class="clearfix" id="home" style="margin-bottom: 2rem;">    
-        <div style="position: relative;overflow: hidden;">
+    <section class="clearfix" id="home" style="margin-bottom: 2rem;display: none;">    
+        <div style="position: relative;overflow: hidden;width: 100%;margin: auto;">
             <div class="wrap-bg-head-cover">
-                <img src="public/images/cover_head.png" class="img-responsive center-block" />
+                <img src="public/images/cover_head.png" style="width:100%;" class="img-responsive center-block" />
             </div>
             <div class="rw-wrap-text-title">
                 <div class="container">
@@ -370,8 +377,8 @@
                     <img src="public/images/mobile_header.png" class="img-responsive" />
                 </div>
             </div>
-            <div style="position: absolute;left: 0;bottom:-135px;">
-                <img src="public/images/bg_bottom_cover_head1.png" class="img-responsive" />
+            <div class="rw-bottom-cover-header" style="width: 100%;">
+                <img src="public/images/bg_bottom_cover_head1.png" style="width: 100%;" class="img-responsive" />
             </div>
         </div>         
         <div class="wrap-box-bottom-btn"">
@@ -384,14 +391,66 @@
         </div>   
 
     </section>
+    
+    <section class="clearfix" id="home" style="margin-bottom: 2rem;">    
+        <div style="position: relative;overflow: hidden;width: 100%;margin: auto;">
+            <div class="wrap-bg-head-cover">
+                <img src="public/images/cover_head.png" style="width:100%;" class="img-responsive center-block" />
+            </div>
+            <div style="position:absolute;right: 0px;top: 115px;width:100%;">
+                <div class="container">
+                    <div style="width:65%;">
+                        <h1 class="title-head-slide">                        
+                            Decentralized blockchain-based <br>food review platform with NFT
+                        </h1>
+                        <div class="text-head-slide">
+                            ryoii is the world's first Blockchain-based restaurant review Platform
+                            that offers token rewards to users for high quality
+                            restaurant review embedded with NFTs features
+                        </div>
+
+                        <div class="ry-wrap-box-bottom-btn">
+                            <a href="#" class="btn-cover-head mr-3" style="background-color: #ffb506;border-color: #ffb506;">
+                                GET STARTED
+                            </a>
+                            <a href="#" class="btn-cover-head"> 
+                                GET WHITE PAPER
+                            </a>
+                        </div>
+    
+                        <div class="ry-wrap-box-download">
+                            <p style="color: #FFFFFF;font-size: 14px;margin-bottom: 8px;">Available for download</p>
+                            <div class="ry-wrap-box-btn-app-download">                        
+                                <a href="#">
+                                    <img src="public/images/btn_app_store.png" class="img-download-app" style="margin-right: 8px;" />
+                                </a>
+                                <a href="#"> 
+                                   <img src="public/images/btn_google_play.png" class="img-download-app" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                
+            </div>
+            <div class="container d-none d-lg-block d-md-block">
+                <div style="position:absolute;right: 0px;top:95px;width:45%;">
+                    <img src="public/images/mobile_header.png" class="img-responsive" />            
+                </div>
+                <div  style="width: 100%;position:absolute;left: 0px;bottom:-65px;">
+                    <img src="public/images/bg_bottom_cover_head1.png" style="width: 100%;" class="img-responsive" />
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="clearfix"></div>
 
-	<!-- ##### Welcome Start ##### -->
-	<section class="clearfix" id="decentralise_review_platform">
+	<!-- ##### >What is Ryoii Start ##### -->
+	<section class="section-content clearfix" id="decentralise_review_platform">
 	    <div class="container">
 	        <div class="row align-items-center">	                
-	            <div class="col-12 col-lg-6">
+	            <div class="col-12 col-lg-6 d-lg-block d-none">
                     <div class="welcome-meter">
                         <img src="public/images/ryoii_community1.png" class="img-responsive center-block" alt="">
                     </div>
@@ -402,27 +461,56 @@
 	                        <h6 class="sc_item_subtitle"><b>01.</b> welcome</h6>
 	                    </div>
 	                    <h4 >What is Ryoii Decentralized Review Platform ?</h4>
-                       
+
+                        <div class="welcome-meter d-lg-none d-block mb-5" >
+                            <img src="public/images/ryoii_community1.png"  class="img-responsive center-block" alt="">
+                        </div>                                               
 	                    <p>
-                            Ryoii wants to create a decentralized review platform that uses advantages of token incentives and distributed ledgers to create immutable records and create filtered information layers to  filter out false and fake reviews
+                            Ryoii wants to create a decentralized review platform that uses advantages of token incentives and distributed ledgers to create immutable records and create filtered information layers to filter out false and fake reviews.
                         </p>
                         <p>
-                            <p>
-                                Ryoii wants to create a decentralized review platform that uses advantages of token incentives and distributed ledgers to create immutable records and create filtered information layers to  filter out false and fake reviews
-                            </p>
+                            Unlike the centralized one, we believe trustworthiness is the most important thing for a review platform and restaurant business.
                         </p>
                         <p>
-                            So, we want to create a new layer working as a trust information layer in our system to help us build strong community with strong incentives which  share the same goals and values to redefine new standards of a review platform business and drive the economic growth of the restaurant industry of the world 
+                            So, we want to create a new layer working as a trust information layer in our system to help us build strong community with strong incentives which share the same goals and values to redefine new standards of a review platform business and drive the economic growth of the restaurant industry of the world. 
                         </p>
 	                </div>
 	            </div>
 	        </div>
 	    </div>
 	</section>
-	<!-- ##### Welcome End ##### -->
+	<!-- ##### >What is Ryoii End ##### -->
+
+    <!-- ##### >Who is Ryoii and what do we do? Start ##### -->
+	<section class="section-content clearfix" id="decentralise_review_platform">
+	    <div class="container">
+	        <div class="row align-items-center">	                
+	            
+	            <div class="col-12 col-lg-12">
+	                <div class="who-we-contant">
+	                    <div class="text-left">
+	                        <h6 class="sc_item_subtitle"><b>01.</b> welcome</h6>
+	                    </div>
+	                    <h4 >What is Ryoii Decentralized Review Platform ?</h4>
+
+                        <div class="welcome-meter d-lg-none d-block mb-5" >
+                            <img src="public/images/ryoii_community1.png"  class="img-responsive center-block" alt="">
+                        </div>                                               
+	                    <p>
+                            Ryoii is a restaurant review website providing trustworthy restaurant information in Thailand since 2015. We have our own review platform (website), social media and a strong online community. Currently, we have more than 10,000 + restaurants in our database and our website has more than 1,000,000 visitors per month and growing daily.
+                        </p>            
+                        <p>
+                            We also have high visibility on social media with more than  170,000 followers in Facebook as well as high engagement between 2,000,000- 10,000,0000 engagements every month.
+                        </p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<!-- ##### >Who is Ryoii and what do we do? End ##### -->
 
 	<!-- ##### Token Utilites Start ##### -->
-	<section class="section-padding-100 clearfix">
+	<section class="section-content section-padding-100 clearfix">
 	    <div class="container">
 	        <div class="row align-items-center">                    
 	            <div class="col-12 col-lg-8">
@@ -442,31 +530,31 @@
 	            <div class="col-12">                       
                     <div style="padding:30px 0px 0px 0px;overflow:hidden">
                         <div class="row text-center">
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-md-3 col-sm-6 col-6">
                                 <img src="public/images/token_food.png" alt="">
                                 <h4 class="m-0">Food</h4>
-                                <p>
+                                <p style="line-height: 1.2;">
                                     Ryoii aim to support munities by
                                 </p>
                             </div>
-                            <div class= "col-md-3 col-sm-6 col-xs-12">
+                            <div class= "col-md-3 col-sm-6 col-6">
                                 <img src="public/images/token_review.png" alt="">
                                 <h4 class="m-0">Reviews</h4>
-                                <p>
+                                <p style="line-height: 1.2;">
                                     Ryoii aim to support munities by
                                 </p>
                             </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-md-3 col-sm-6 col-6">
                                 <img src="public/images/token_nft.png" alt="">
                                 <h4 class="m-0">NFTs</h4>
-                                <p>
+                                <p style="line-height: 1.2;">
                                     Ryoii aim to support munities by
                                 </p>
                             </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-md-3 col-sm-6 col-6">
                                 <img src="public/images/token_reward.png" alt="">
                                 <h4 class="m-0">Reward</h4>
-                                <p>
+                                <p style="line-height: 1.2;">
                                     Ryoii aim to support munities by
                                 </p>
                             </div>                    
@@ -479,7 +567,7 @@
 	<!-- ##### Token Utilites End ##### -->
 
     <!-- ##### Progress Start ##### -->
-    <section class="section-padding-100" style="background: url('public/images/bg_progress.png');background-repeat: no-repeat;background-size: cover;">
+    <section class="section-padding-100" style="background: url('public/images/bg_progress.png');background-repeat: no-repeat;background-size: cover;max-width: 1920px;margin: auto;">
         <div class="container">
             <div class="section-heading text-center">
                
@@ -505,7 +593,7 @@
     <div class="clearfix"></div>
 
     <!-- ##### Why decntralise Start ##### -->
-    <section class="about-us-area section-padding-100-0 clearfix" id="about">
+    <section class="section-content about-us-area section-padding-100-0 clearfix" id="about">
 	    <div class="container">
 	        <div class="row align-items-center">	                
 	            
@@ -515,21 +603,26 @@
 	                        <h6 class="sc_item_subtitle"><b>04.</b> Ryoii Decentralize System</h6>
 	                    </div>
 	                    <h4>Why do we go from centralized to decentralized ?</h4>
+
+                        <div class="welcome-meter d-lg-none d-block mb-5" >
+                            <img src="public/images/ryoii_decentralize.png"  class="img-responsive center-block" alt="">
+                        </div>  
+
 	                    <p>
-                            For 6 years in the industry, we can see that the problem is caused by the centralized review platform which is the big part for consumers’ decision to choose which restaurants to visit. According to bright local research, 82% of consumers have read fake reviews in the last year. This raises concerns about growing of fake and false reviews in the industry
+                            For 6 years in the industry, we can see that the problem is caused by the centralized review platform which is the big part for consumers’ decision to choose which restaurants to visit. According to bright local research, 82% of consumers have read fake reviews in the last year. This raises concerns about growing of fake and false reviews in the industry.
                         </p>
                         <p>
-                            Faking reviews is a big problem because it manipulates economic incentives that should drive the restaurant industry forward. Combined with the fast pace of information; faking reviews has now become a business itself. It is used as a tool to manipulate reputations which hurts the restaurant industry as a whole
+                            Faking reviews is a big problem because it manipulates economic incentives that should drive the restaurant industry forward. Combined with the fast pace of information; faking reviews has now become a business itself. It is used as a tool to manipulate reputations which hurts the restaurant industry as a whole.
                         </p>
                         <p>
-                            We have seen  a lot of restaurants get one star just because their competitors want to destroy their reputations and some not-so-good restaurants get 5 stars because they generate fake reviews for themselves. This misconduct will eventually cause downturns for the restaurant industry in the future
+                            We have seen a lot of restaurants get one star just because their competitors want to destroy their reputations and some not-so-good restaurants get 5 stars because they generate fake reviews for themselves. This misconduct will eventually cause downturns for the restaurant industry in the future.
                         </p>
                         <p>
-                            So, we have researched and decided to step in to create a decentralized blockchain based review platform that uses advantages of token incentives and distributed ledgers to create immutable records and a new kind of community that can get incentives from curating and maintaining trustworthiness of the platform that will eventually belong to them 
+                            So, we have researched and decided to step in to create a decentralized blockchain based review platform that uses advantages of token incentives and distributed ledgers to create immutable records and a new kind of community that can get incentives from curating and maintaining trustworthiness of the platform that will eventually belong to them. 
                         </p>
 	                </div>
 	            </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 d-lg-block d-none">
                     <div class="welcome-meter">
                         <img src="public/images/ryoii_decentralize.png" class="img-responsive center-block" alt="">
                     </div>
@@ -539,15 +632,55 @@
 	</section>
     <!-- ##### Why decntralise End ##### -->
 
-    <!-- ##### Our Solutions Start ##### -->
-    <section class="section-padding-100-0">
+     <!-- ##### from ideas to execution Start ##### -->
+     <section class="section-content section-padding-100-0">
         <div class="container">
-            <div class="section-heading text-center">
+            <div>
                
                 <div class="justify-content-center">
                     <h6 class="sc_item_subtitle"><b>05.</b> Ryoii Solutions</h6>
                 </div>
-                <h4 style="font-size: 30px;">Our Solutions</h4>
+                <h4 style="font-size: 30px;">from ideas to execution</h4>
+                
+                <p5>“An idea is worthless. Execution is everything.”</p5>
+
+                <p>
+                    To create innovations, most startups fail at the beginning because they can’t get tractions high enough to prove their business viability.
+                </p>
+                <p>
+                    So, despite having the traffic of more than 1,000,000 visitors every month , however, to avoid those pitfalls, 
+                    we carefully lay out the plans and we have decided to breakdown  our goals  into 3 phases as the milestones of achievement which are.
+                </p>     
+                <p>
+                    phase 1 community and utilities tokens focus
+                </p> 
+                <p>
+                    phase 3  Global expansion and DAO focus  
+                </p> 
+                <p>
+                    phase  2 trust information layers and decentralized application focus                   
+                </p>                       
+            </div>
+            
+ 
+        </div>
+    </section>
+    <!-- ##### from ideas to execution End ##### -->
+
+    <!-- ##### Our Solutions Start ##### -->
+    <section class="section-content section-padding-100-0">
+        <div class="container">
+            <div class=" text-center">
+               
+                <div class="justify-content-center">
+                    <h6 class="sc_item_subtitle"><b>05.</b> Ryoii Solutions</h6>
+                </div>
+                <h4>Our Solutions</h4>
+
+                <div class="mt-3 mb-5">
+                    <img src="public/images/ryoii_ecosystem.png" class="img-responsive center-block" alt="">
+                </div>
+
                 <p style="max-width: 100%;text-align: left;">
                     I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                 </p>
@@ -555,16 +688,262 @@
                     I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                 </p>                            
             </div>
-            <div>
-                <img src="public/images/ryoii_ecosystem.png" class="img-responsive center-block" alt="">
-            </div>
+            
  
         </div>
     </section>
     <!-- ##### Our Solutions End ##### -->
 
+     <!-- ##### NFT discount coupon  Start ##### -->
+     <section class="section-content section-padding-100-0">
+        <div class="container">
+            <div>
+               
+                <div class="justify-content-center">
+                    <h6 class="sc_item_subtitle"><b>05.</b> Ryoii Solutions</h6>
+                </div>
+                <h4 >NFT discount coupon </h4>
+
+                <p>
+                    In phase 1, our objective is to build and expand Ryoii community. So, we use NFT to create NFT discount tokens that users can exchange their Ryoii tokens to NFT discount coupons that can be used at participating restaurants.                    
+                </p>
+                <p>
+                    So, despite having the traffic of more than 1,000,000 visitors every month , however, to avoid those pitfalls, 
+                    we carefully lay out the plans and we have decided to breakdown  our goals  into 3 phases as the milestones of achievement which are.
+                </p>     
+                <p>
+                    Currently, we have more than 50 restaurants participating in our NFT coupon campaign and we have created more than 1,000 coupons in our ecosystem,
+                </p> 
+                <p>
+                    if you are restaurants and want to join our campaign please contact us via www.abcdefg.com/signup
+                </p> 
+                <p>
+                    (see participating restaurants below)                   
+                </p>                       
+            </div>
+            
+ 
+        </div>
+    </section>
+    <!-- ##### NFT discount coupon  End ##### -->
+
+    <!-- ##### NFT discount coupon  Start ##### -->
+    <section class="section-content section-padding-100-0">
+        <div class="container">
+            <div>               
+                <div class="justify-content-center">
+                    <h6 class="sc_item_subtitle"><b>05.</b> Ryoii Solutions</h6>
+                </div>
+                <h4 >token utilities (ready to use)</h4>
+
+                <p>
+                    Ryoii token (RYC) is the token utilities that can be used within Ryoii ecosystem.
+                 </p>
+                 <p> 
+                Users can exchange Ryoii tokens for NFT discount coupons and can use them as a discount at participating restaurants. Moreover, users can exchange Ryoii tokens as a fee for minting NFT reviews which is the new way to review using the NFT technology, and also can get rewards for their contributions. 
+                </p>
+                <p>
+                For the restaurants, Currently, the restaurants who join our ecosystem can exchange Ryoii tokens for advertising and review services from Ryoii team.
+                </p>
+                <p>
+                And in the future, they will be offered the ability to exchange their Ryoii tokens for premium services such as payment for ads, creating of NFT promotions, tips for users, or buying NFT reviews from users.
+                </p>                           
+            </div>            
+        </div>
+    </section>
+    <!-- ##### NFT discount coupon  End ##### -->
+
+    <!-- ##### Our mobile app send and receive token  Start ##### -->
+    <section class="section-content section-padding-100-0">
+        <div class="container">
+            <div>               
+                <div class="justify-content-center">
+                    <h6 class="sc_item_subtitle"><b>05.</b> Ryoii Solutions</h6>
+                </div>
+                <h4 >Our mobile app send and receive token)</h4>
+                <p>
+                    We will lunch our iOS mobile app at beginning of December (before the 1st sale event). For the android beta version, we will launch in February 2022 and users can download it from Play Store. 
+                    Our app will offer the ability to send and receive tokens within our ecosystem. 
+                </p>
+                <p>
+                    Users can either use our tokens or send them to their friends or restaurants. Restaurants can send our tokens as a gift for customers and can also participate with decentralized applications within our ecosystem.  
+                </p>
+                <p>
+                And in the future, they will be offered the ability to exchange their Ryoii tokens for premium services such as payment for ads, creating of NFT promotions, tips for users, or buying NFT reviews from users.
+                </p>                           
+            </div>            
+        </div>
+    </section>
+    <!-- ##### Our mobile app send and receive token End ##### -->
+
+    <!-- ##### nft coupons Start ##### -->
+    <section class="section-content section-padding-100-0">
+        <div class="container">
+            <div>               
+                <div class="justify-content-center">
+                    <h6 class="sc_item_subtitle"><b>05.</b> Ryoii Solutions</h6>
+                </div>
+                <h4>nft coupons</h4>
+                <p>
+                    Users can exchange Ryoii tokens for  NFT coupons in our app  and this NFT can be used at participating restaurants as a discount for their meals.
+                </p>
+                <p>
+                    The restaurants  participating in our ecosystem can use premium features not only to create NFT campaigns but also get insight reports at the end of the campaign.
+                </p>                           
+            </div>            
+        </div>
+    </section>
+    <!-- ##### nft coupons End ##### -->
+
+    <!-- ##### nft review Start ##### -->
+    <section class="section-content section-padding-100-0">
+        <div class="container">
+            <div>               
+                <div class="justify-content-center">
+                    <h6 class="sc_item_subtitle"><b>05.</b> Ryoii Solutions</h6>
+                </div>
+                <h4>nft review</h4>
+                <p>
+                    This will be the first time that you can have the  ownership of your own reviews, get tips from  restaurants for your quality and honest reviews, and also, create NFT with just a fraction of the cost.
+                </p>
+                <p>
+                    We have a plan to connect the API with the marketplace, then, users can list their NFT from our app to well known marketplaces such as OpenSea for sales. They will also be offered the ability to choose the chains to minimise gas fee (Etherium or Polygon). Currently, we have a proof of concept and have finished the testing but the full features will be launched at the beginning of March according to our roadmap (please see the roadmap below).
+                </p>                           
+            </div>            
+        </div>
+    </section>
+    <!-- ##### nft review End ##### -->
+
+    <!-- ##### Other keyFeature  Start ##### -->
+	<section class="section-content section-padding-100 clearfix" id="key_feature">
+	    <div class="container">
+	        <div class="row align-items-center">	                
+	            <div class="col-12">
+	                <div class="who-we-contant">
+	                    <div class="text-left">
+	                        <h6 class="sc_item_subtitle"><b>06.</b>Other Key feature</h6>
+	                    </div>
+	                    <h4 >Other Key feature</h4>	                    
+	                </div>
+	            </div>
+	        </div>
+            <div class="row">	                
+	            <div class="col-12 col-lg-6 d-lg-block d-none">
+                    <div class="welcome-meter">
+                        <img src="public/images/payment_comfirmation.png" class="img-responsive center-block" alt="">
+                    </div>
+                </div>
+	            <div class="col-12 col-lg-6">
+	                <div class="key-feature-contant">
+	                    <h5>Reward mechanism</h5>
+
+                        <div class="welcome-meter d-lg-none d-block mb-5 mt-3" style="margin-top:-65px;">
+                            <img src="public/images/payment_comfirmation.png"  class="img-responsive center-block" alt="">
+                        </div>   
+                        <p>
+                            We have plans to launch a reward model for contributors, both users and restaurants, in Q1 2022   
+                        </p>
+                        <p>
+                            To ensure fair reward distribution and prevent inflation of our tokens, we will use reward tokens that can be redeemed to RYC and also use a reward pool and a tier system to prevent malicious actors from gaming the system.  
+                        </p>
+                        <p>
+                            There are multiple ways for users to earn Ryoii reward tokens including the rewards from verified reviews, user referrals, edit or creating new restaurant details or participating in the oracle peer review process, etc.
+                        </p>
+                        <p>
+                            (see more details about a reward pool and distribution from our white papers)
+                        </p>    
+                                    
+	                </div>
+	            </div>
+            </div>
+
+            <div class="row">	    
+               
+                <div class="col-12 col-lg-6">
+	                <div class="key-feature-contant">
+	                    <h5>influencer platform</h5>
+
+                        <div class="welcome-meter d-lg-none d-block mb-5 mt-3" style="margin-top:-65px;">
+                            <img src="public/images/review_contract.png"  class="img-responsive center-block" alt="">
+                        </div>  
+
+	                    <p>
+                            We want to build a trusted influencer platform to ensure the validity and quality of the contents. Our decentralized influencer platform will replace filter algorithms with an active and collaborative community called “oracle layer” which uses machine learning to suggest suitable reviewers based on the criteria such as food preferences or choose people who have really visited those restaurants.
+                        </p>
+                        <p>
+                            After the oracle layer has been launched, we will provide restaurants the feature of  hiring influencers to create reviews. The restaurants can offer incentives to influencers via our smart contract but influencers will receive those incentives only if they provide trustworthy contents that have passed the process of the peer reviews from “oracle layer”  and have successfully been published on our platform.  
+                        </p>
+                        <p>
+                            *We have a plan to launch our decentralized influencer platform in Q4 2022.   
+                        </p>
+	                </div>
+	            </div>
+                <div class="col-12 col-lg-6 d-lg-block d-none">
+                    <div class="feature-review-contract">
+                        <img src="public/images/review_contract.png" class="img-responsive center-block" alt="">
+                    </div>
+                </div>
+            </div>
+	    </div>
+	</section>
+	<!-- ##### Other keyFeature End ##### -->
+
+    <!-- ##### Our Roadmap Start ##### -->
+    <section class="section-content section-padding-100-0">
+        <div class="container">
+            <>               
+                <div class="justify-content-center">
+                    <h6 class="sc_item_subtitle"><b>05.</b>Our Roadmap</h6>
+                </div>
+                <h4>Our Roadmap</h4>
+                <h5>token supply and allocation</h5>
+                <p>
+                    Ryoii tokens will be the total and finite supply of 300,000,000 RYC.                    
+                </p>
+                <p>
+                    As described in the execution plan, we will release  the tokens of 100,000,000 RYC per phase. So, at 1st sale event, only 100,000,000 will be released to the ecosystem and another 200,000,000 RYC will held in reserve by Ryoii team which will be release later according to the phase implementation; (100,000,000 RYC per phase) 
+                 </p>
+                <p>
+                    In 1st presale event, 50,000,000 RYC will be listed for sale as part of the sale event and 50,000,000 RYC will be distributed in proportion as follows 
+                </p>       
+                <h5>1st sale token allocation </h5>       
+                <p>
+                    Private sales
+10% of the tokens (10,000,000) will go to private sales with 50% discount. They will be locked for 6 months and after 6 months 50% of that (5,000,000 tokens) will be unlocked. For the other half, each 10% of it will be unlocked every month after that.
+                </p>     
+                <p>IDO sales</p>    
+                <p>Public sale </p>    
+            </div>            
+        </div>
+    </section>
+    <!-- ##### Our Roadmap End ##### -->
+
+    <!-- ##### use of fund Start ##### -->
+    <section class="section-content section-padding-100-0">
+        <div class="container">
+            <div>               
+                <div class="justify-content-center">
+                    <h6 class="sc_item_subtitle"><b>05.</b>use of fund</h6>
+                </div>
+                <h4>use of fund</h4>
+                <p>
+                    -	40 % of the fund will be used for marketing and growing the community  of Ryoii ecosystem (restaurants and influencers).                  
+                </p>
+                <p>
+                    -	35% of  the fund will be applied to growing the development and other operation teams. </p>
+                <p>
+                    -	10% of the fund collected will go towards legal procedures to ensure that the work complies with relevant laws, policies, and regulations.
+                </p>  
+                <p>
+                    -	15% of the fund will be reserved  to ensure smooth running of the operations of Ryoii ecosystem.
+                </p>                          
+            </div>            
+        </div>
+    </section>
+    <!-- ##### use of fund End ##### -->
+
 	<!-- ##### KeyFeature Start ##### -->
-	<section class="section-padding-100 clearfix" id="key_feature">
+	<section class="section-content section-padding-100 clearfix" id="key_feature">
 	    <div class="container">
 	        <div class="row align-items-center">	                
 	            <div class="col-12">
@@ -585,14 +964,17 @@
 	            <div class="col-12 col-lg-6">
 	                <div class="key-feature-contant">
 	                    <h5>What is Decentralise Review Platform ?</h5>
+
+                        <div class="welcome-meter d-lg-none d-block mb-5 mt-3" style="margin-top:-65px;">
+                            <img src="public/images/payment_comfirmation.png"  class="img-responsive center-block" alt="">
+                        </div>   
+
 	                    <p>
                             Ryoii aim to support communities by returning its value
                             to those ho provide contributions by rewarding them
                             with ours tokens (Ryoiicoin)
                         </p>    
-                        <div class="welcome-meter d-lg-none d-block mb-5" style="margin-top:-65px;">
-                            <img src="public/images/payment_comfirmation.png"  class="img-responsive center-block" alt="">
-                        </div>                
+                                    
 	                </div>
 	            </div>
             </div>
@@ -602,13 +984,18 @@
                 <div class="col-12 col-lg-6">
 	                <div class="key-feature-contant">
 	                    <h5>What is Decentralise Review Platform ?</h5>
+
+                        <div class="welcome-meter d-lg-none d-block mb-5 mt-3" style="margin-top:-65px;">
+                            <img src="public/images/review_contract.png"  class="img-responsive center-block" alt="">
+                        </div>  
+
 	                    <p>
                             Ryoii aim to support communities by returning its value
                             to those ho provide contributions by rewarding them
                             with ours tokens (Ryoiicoin)</p>
 	                </div>
 	            </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 d-lg-block d-none">
                     <div class="feature-review-contract">
                         <img src="public/images/review_contract.png" class="img-responsive center-block" alt="">
                     </div>
@@ -624,14 +1011,17 @@
 	            <div class="col-12 col-lg-6">
 	                <div class="key-feature-contant">
 	                    <h5>What is Decentralise Review Platform ?</h5>
+
+                        <div class="welcome-meter mb-5 d-lg-none d-block">
+                            <img src="public/images/oracle1.png" class="img-responsive center-block" alt="">
+                        </div>
+
 	                    <p>
                             Ryoii aim to support communities by returning its value
                             to those ho provide contributions by rewarding them
                             with ours tokens (Ryoiicoin)
                         </p>
-                        <div class="welcome-meter mb-5 d-lg-none d-block">
-                            <img src="public/images/oracle1.png" class="img-responsive center-block" alt="">
-                        </div>
+                       
 	                </div>
 	            </div>
             </div>
@@ -640,13 +1030,19 @@
                 <div class="col-12 col-lg-6">
 	                <div class="key-feature-contant">
 	                    <h5>What is Decentralise Review Platform ?</h5>
+
+
+                        <div class="welcome-meter mb-5 d-lg-none d-block">
+                            <img src="public/images/digital_coupon1.png" class="img-responsive center-block" alt="">
+                        </div>
+                        
 	                    <p>
                             Ryoii aim to support communities by returning its value
                             to those ho provide contributions by rewarding them
                             with ours tokens (Ryoiicoin)</p>
 	                </div>
 	            </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 d-lg-block d-none">
                     <div class="welcome-meter">
                         <img src="public/images/digital_coupon1.png" class="img-responsive center-block" alt="">
                     </div>
@@ -658,7 +1054,7 @@
 	<!-- ##### KeyFeature End ##### -->
     
     <!-- ##### Got you Wherever you are start ##### -->
-    <section class="spread-map" style="background-image: url('img/bg-img/bread-bg.png');padding-bottom: 0px;">
+    <section class="section-content spread-map" style="background-image: url('img/bg-img/bread-bg.png');padding-bottom: 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-xs-12">
@@ -717,7 +1113,7 @@
     <!-- ##### Got you Wherever you are End ##### -->
 
     <!-- ##### Our roadmap Area start ##### -->
-    <section class="roadmap section-padding-100-0" style="background:#f8fbfe" id="roadmap">
+    <section class="section-content roadmap section-padding-100-0" style="background:#f8fbfe" id="roadmap">
         
         <div class="container">
             <div class="section-heading text-center">
@@ -765,7 +1161,7 @@
     <!-- ##### Our roadmap Area End ##### -->
 
     <!-- ##### token-distribution Area start ##### -->
-    <section class="token-distribution section-padding-100-0">
+    <section class="section-content token-distribution section-padding-100-0">
         <div class="container">
             
             <div class="section-heading text-center">
@@ -795,7 +1191,7 @@
     <!-- ##### token-distribution Area End ##### -->
     
     <!-- ##### Blog Area Start ##### -->
-    <section class="our_blog_area clearfix section-padding-100-0" id="blog">
+    <section class="section-content our_blog_area clearfix section-padding-100-0" id="blog">
         <div class="container">
             <div class="row">
                 <div class="col-12">
